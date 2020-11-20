@@ -1,1 +1,1 @@
-web: gunicorn weedstacks.wsgi --log-file -
+web: gunicorn weeds.wsgi --log-file -
