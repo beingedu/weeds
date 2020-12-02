@@ -371,6 +371,15 @@ def faq(request):
 
     return render(request, 'faq.html', context)
 
+def sitemap(request):
+    setting = Setting.objects.get(pk=1)
+    context = {'faq': faq,
+               'setting': setting,
+               'category': category,
+               }
+
+    return render(request, 'sitemap.xml', context)
+
 
 def pay(request):
     setting = Setting.objects.get(pk=1)

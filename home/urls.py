@@ -19,6 +19,7 @@ urlpatterns = [
     path('contact/', views.contactus, name='contact'),
     path('faq/', views.faq, name='faq'),
     path('pay/', views.pay, name='pay'),
+    path('sitemap/', views.sitemap, name='sitemap'),
     path('prodinfo/', views.prodinfo, name='prodinfo'),
     # path('gallery/', views.gallery, name='gallery'),
     # path('pricing/', views.pricing, name='pricing'),
