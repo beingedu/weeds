@@ -3,11 +3,13 @@ from django.urls import path
 from django.conf.urls.static import static
 from django.conf import settings
 from home import views
-from .sitemaps import StaticViewSitemap
+from .sitemaps import ProductSitemap, StaticViewSitemap, CategorySitemap
 
 sitemaps = {
 
+    'product' : ProductSitemap,
     'static': StaticViewSitemap,
+    'category': CategorySitemap,
 
 }
 
